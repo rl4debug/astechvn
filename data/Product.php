@@ -5,7 +5,9 @@
  * Date: 19-Apr-17
  * Time: 11:55 AM
  */
-include_once(dirname(__DIR__).'./config.php');
+
+define('ROOT_PATH', dirname(__DIR__) . '/');
+include_once(ROOT_PATH.'./config.php');
 
 class Product{
     public $ID;
