@@ -17,4 +17,9 @@ define('DB_NAME', 'astechvn');
 define('DB_USER', 'root');
 define('DB_PASS', '');
 
+function write($text){
+    $myfile = fopen("log.txt", "a") or die("Unable to open file!");
+    fwrite($myfile, $text);
+    fclose($myfile);
+}
 ?>
